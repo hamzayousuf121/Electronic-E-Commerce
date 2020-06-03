@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Cart</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Start your project here-->
+  <!--Navbar -->
+  <nav class="mb-1 navbar fixed-top navbar-expand-lg navbar-dark secondary-color lighten-1">
+    <a class="navbar-brand" href="#">
+      <img src="./img/logo.png" width="70" height="50" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+      aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="./products.html">
+            Products
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">
+            About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">
+            Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fas fa-user-plus"></i></a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+            <a class="dropdown-item" href="./login.html">Login</a>
+            <a class="dropdown-item" href="./signup.html">Sign up</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fas fa-shopping-cart"></i></a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+            <a class="dropdown-item" href="./cart.html">Check out</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fas fa-user"></i> Profile </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+            <a class="dropdown-item" href="./login.html">Log out</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br><br>
+  <!--/.Navbar -->
+
+  <div class="container-fluid z-depth-1 py-5 my-5">
+    <div class="row">
+      <div class="col-lg-8 col-md-12 col-12 ">
+        <!-- Section: Block Content -->
+        <section>
+
+          <!-- Shopping Cart table -->
+          <div class="table-responsive table-striped">
+            <table class="table product-table table-cart-v-1 hoverable">
+              <!-- Table head -->
+              <thead>
+                <tr>
+                  <th></th>
+                  <th class="font-weight-bold">
+                    <strong>Product</strong>
+                  </th>
+                  <th class="font-weight-bold">
+                    <strong>Color</strong>
+                  </th>
+                  <th></th>
+                  <th class="font-weight-bold">
+                    <strong>Price</strong>
+                  </th>
+                  <th class="font-weight-bold">
+                    <strong>QTY</strong>
+                  </th>
+                  <th class="font-weight-bold">
+                    <strong>Amount</strong>
+                  </th>
+                  <th></th>
+                </tr>
+              </thead>
+              <!-- Table head -->
+              <!-- Table body -->
+              <tbody>
+                <!-- First row -->
+                <tr>
+                  <th scope="row">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/13.jpg" alt=""
+                      class="img-fluid z-depth-0">
+                  </th>
+                  <td>
+                    <h5 class="mt-3">
+                      <strong>iPhone</strong>
+                    </h5>
+                    <p class="text-muted">Apple</p>
+                  </td>
+                  <td style="padding-top: 40px;">White</td>
+                  <td></td>
+                  <td style="    padding-top: 40px !important;">$800</td>
+                  <td class="text-center text-md-left">
+                    <span class="qty" style="position: relative;
+                  top: 24px;">1 </span>
+                    <div class="btn-group radio-group ml-2" data-toggle="buttons">
+                      <label class="btn btn-sm btn-primary btn-rounded">
+                        <input type="radio" name="options" id="option1">&mdash;
+                      </label>
+                      <label class="btn btn-sm btn-primary btn-rounded">
+                        <input type="radio" name="options" id="option2">+
+                      </label>
+                    </div>
+                  </td>
+                  <td class="font-weight-bold">
+                    <strong style="position: relative;
+                  top: 24px;">$800</strong>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-sm btn-primary btn-rounded"
+                      style="margin-top: 27px;padding-top: 24px;" data-toggle="tooltip" data-placement="top"
+                      title="Remove item">X
+                    </button>
+                  </td>
+                </tr>
+                <!-- First row -->
+                <!-- Second row -->
+                <tr>
+                  <th scope="row">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/6.jpg" alt=""
+                      class="img-fluid z-depth-0">
+                  </th>
+                  <td>
+                    <h5 class="mt-3">
+                      <strong>Headphones</strong>
+                    </h5>
+                    <p class="text-muted">Sony</p>
+                  </td>
+                  <td style="padding-top: 40px;">Red</td>
+                  <td></td>
+                  <td style="    padding-top: 40px !important;">$200</td>
+                  <td class="text-center text-md-left">
+                    <span class="qty" style="position: relative;
+                  top: 24px;">3 </span>
+                    <div class="btn-group radio-group ml-2" data-toggle="buttons">
+                      <label class="btn btn-sm btn-primary btn-rounded">
+                        <input type="radio" name="options" id="option1">&mdash;
+                      </label>
+                      <label class="btn btn-sm btn-primary btn-rounded">
+                        <input type="radio" name="options" id="option2">+
+                      </label>
+                    </div>
+                  </td>
+                  <td class="font-weight-bold">
+                    <strong style="position: relative;
+                  top: 24px;">$600</strong>
+                  </td>
+                  <td>
+                    <button type="button" style="margin-top: 27px;padding-top: 24px;" class="btn btn-sm btn-primary"
+                      data-toggle="tooltip" data-placement="top" title="Remove item">X
+                    </button>
+                  </td>
+                </tr>
+                <!-- Second row -->
+                <!-- Third row -->
+                <tr>
+                  <th scope="row">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg" alt=""
+                      class="img-fluid z-depth-0">
+                  </th>
+                  <td>
+                    <h5 class="mt-3">
+                      <strong>iPad Pro</strong>
+                    </h5>
+                    <p class="text-muted">by FifeSteps</p>
+                  </td>
+                  <td style="padding-top: 40px;">Gold</td>
+                  <td></td>
+                  <td style=" padding-top: 40px !important;">$600</td>
+                  <td class="text-center text-md-left">
+                    <span class="qty" style="position: relative;
+                  top: 24px;">2 </span>
+                    <div class="btn-group radio-group ml-2" data-toggle="buttons">
+                      <label class="btn btn-sm btn-primary btn-rounded">
+                        <input type="radio" name="options" id="option1">&mdash;
+                      </label>
+                      <label class="btn btn-sm btn-primary btn-rounded">
+                        <input type="radio" name="options" id="option2">+
+                      </label>
+                    </div>
+                  </td>
+                  <td class="font-weight-bold">
+                    <strong style="position: relative;
+                  top: 24px;">$1200</strong>
+                  </td>
+                  <td>
+                    <button type="button" style="margin-top: 27px;padding-top: 24px;" class="btn btn-sm btn-primary"
+                      data-toggle="tooltip" data-placement="top" title="Remove item">X
+                    </button>
+                  </td>
+                </tr>
+                <!-- Third row -->
+                <!-- Fourth row -->
+                <tr>
+                  <td colspan="3"></td>
+                  <td>
+                    <h4 class="mt-2">
+                      <strong>Total</strong>
+                    </h4>
+                  </td>
+                  <td class="text-right">
+                    <h4 class="mt-2">
+                      <strong>$2600</strong>
+                    </h4>
+                  </td>
+                  <td colspan="3" class="text-right text-white">
+                    <a href="#checkout" class="text-white">
+                      <button type="button" class="btn btn-primary btn-rounded px-4 text-white" style="color: aliceblue;">Complete
+                        purchase
+                        <i class="fas fa-angle-right right"></i>
+                    </a>
+                    </button>
+                  </td>
+                </tr>
+                <!-- Fourth row -->
+              </tbody>
+              <!-- Table body -->
+            </table>
+          </div>
+          <!-- Shopping Cart table -->
+
+        </section>
+        <!-- Section: Block Content -->
+
+      </div>
+      <div class="col-lg-4 col-md-12 col-12">
+        <!-- Default form login -->
+        <form class=" border border-light p-5 hoverable" action="#!" id="checkout">
+
+          <p class="h4 mb-4 text-center font-weight-bold purple-text">Delivery Info</p>
+
+          <!-- Email -->
+          <div class="form-group purple-border">
+            <label for="name">Enter your Full Name</label>
+            <input type="text" required id="name" class="form-control mb-4" placeholder="Hamza Yousuf">
+          </div>
+          <div class="form-group purple-border">
+
+            <label for="name">Enter Contact Number</label>
+
+            <input type="number" required class="form-control mb-4" placeholder="031211223346">
+          </div>
+
+          <div class="form-group purple-border">
+
+            <label for="name">Enter Your Email Address</label>
+
+            <input type="email" required class="form-control mb-4" placeholder="hamzayousuf@gmail.com">
+
+          </div>
+
+          <div class="form-group purple-border">
+            <label for="exampleFormControlTextarea4">Enter Your Address</label>
+            <textarea class="form-control" id="exampleFormControlTextarea4" rows="3"></textarea>
+          </div>
+          <div class="form-group purple-border">
+            <label for="additionalrequiremnt">Additional Requirement</label>
+            <textarea class="form-control" id="additionalrequiremnt" rows="3"></textarea>
+          </div>
+          <!-- Sign in button -->
+          <button class="btn btn-purple btn-block my-4 lighten-1" type="submit">Check Out</button>
+
+        </form>
+        <!-- Default form login -->
+
+      </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small secondary-color lighten-1">
+
+      <!-- Footer Links -->
+      <div class="container">
+
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="./index.html">Home</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="./products.html">Products</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="./about.html">About Us</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="./contact.html">Contact</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="./login.html">Login</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+        <hr class="rgba-white-light" style="margin: 0 15%;">
+
+        <!-- Grid row-->
+        <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+          <!-- Grid column -->
+          <div class="col-md-8 col-12 mt-5">
+            <p style="line-height: 1.7rem" class="footertext">E-commerce (electronic commerce) is the activity of
+              electronically
+              buying or selling of products on online services or over the Internet. Electronic commerce draws
+              on technologies such as mobile commerce, electronic funds transfer, supply chain management,
+              Internet marketing, online transaction processing, electronic data interchange (EDI),
+              inventory management systems, and automated data collection systems. E-commerce is in turn
+              driven by the technological
+              advances of the semiconductor industry, and is the largest sector of the electronics industry.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+        <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+        <!-- Grid row-->
+        <div class="row pb-3">
+
+          <!-- Grid column -->
+          <div class="col-md-12">
+
+            <div class="mb-5 flex-center">
+
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+              </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+              </a>
+              <!--Pinterest-->
+              <a class="pin-ic">
+                <i class="fab fa-pinterest fa-lg white-text"> </i>
+              </a>
+
+            </div>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+      <hr class="rgba-white-light" style="margin: 0 15%;">
+
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright secondary-color lighten-1 text-center py-3">© 2020 Copyright:
+        <a href="https://sites.google.com/view/hamzaeportfolio"> hamzayousuf</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- End your project here-->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

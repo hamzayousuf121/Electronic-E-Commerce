@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Contact us form</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .map-container-section {
+          overflow:hidden;
+          padding-bottom:56.25%;
+          position:relative;
+          height:0;
+        }
+        .map-container-section iframe {
+          left:0;
+          top:0;
+          height:100%;
+          width:100%;
+          position:absolute;
+        }
+      </style>
+
+</head>
+
+<body>
+
+    <!-- Start your project here-->
+  <!--Navbar -->
+  <nav class="mb-1 navbar fixed-top navbar-expand-lg navbar-dark secondary-color lighten-1">
+    <a class="navbar-brand" href="#">
+      <img src="./img/logo.png" width="70" height="50" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+      aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="./products.html">
+            Products
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">
+            About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">
+            Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fas fa-user-plus"></i></a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+            <a class="dropdown-item" href="./login.html">Login</a>
+            <a class="dropdown-item" href="./signup.html">Sign up</a>
+          </div>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fas fa-shopping-cart"></i></a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+            <a class="dropdown-item" href="./cart.html">Check out</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fas fa-user"></i> Profile </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+            <a class="dropdown-item" href="./login.html">Log out</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <br><br>
+    <!--/.Navbar -->
+
+    <!-- Main layout -->
+
+    <div class="container mt-5">
+
+ 
+        <!--Section: Content-->
+        <section class="dark-grey-text mb-5">
+          
+          <!-- Section heading -->
+          <h3 class="font-weight-bold text-center mb-4 purple-text text-uppercase">Contact Us</h3>
+          <!-- Section description -->
+    
+          <!-- Grid row -->
+          <div class="row">
+    
+            <!-- Grid column -->
+            <div class="col-lg-5 mb-lg-0 pb-lg-3 mb-4">
+    
+              <!-- Form with header -->
+              <div class="card hoverable">
+                <div class="card-body">
+                  <!-- Header -->
+                  <div class="form-header accent-1">
+                    <h3 class="mt-2"><i class="fas fa-envelope"></i> Write to us:</h3>
+                  </div>
+                  <p class="dark-grey-text">We'll write rarely, but only the best content.</p>
+                  <!-- Body -->
+                  <div class="md-form">
+                    <i class="fas fa-user prefix grey-text"></i>
+                    <input type="text" id="form-name" class="form-control">
+                    <label for="form-name">Your name</label>
+                  </div>
+                  <div class="md-form">
+                    <i class="fas fa-envelope prefix grey-text"></i>
+                    <input type="text" id="form-email" class="form-control">
+                    <label for="form-email">Your email</label>
+                  </div>
+                  <div class="md-form">
+                    <i class="fas fa-tag prefix grey-text"></i>
+                    <input type="text" id="form-Subject" class="form-control">
+                    <label for="form-Subject">Subject</label>
+                  </div>
+                  <div class="md-form">
+                    <i class="fas fa-pencil-alt prefix grey-text"></i>
+                    <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
+                    <label for="form-text">Send message</label>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-purple">Submit</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Form with header -->
+    
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-lg-7 hoverable">
+            
+              <!--Google map-->
+              <div id="map-container-section" class="z-depth-1-half hoverable map-container-section mb-4" style="height: 360px">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57929.235466552935!2d66.98017300313596!3d24.844128019638156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e70a31f45a9%3A0x25e252450977ec12!2sSaddar%20Town%2C%20Karachi%2C%20Sindh!5e0!3m2!1sen!2s!4v1591036167056!5m2!1sen!2s" frameborder="0"
+                  style="border:0" allowfullscreen></iframe>
+              </div>
+              <!-- Buttons-->
+              <div class="row text-center">
+                <div class="col-md-4">
+                  <a class="btn-floating  accent-1">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </a>
+                  <p>Saddar, Gul Center</p>
+                  <p class="mb-md-0">Zainab Market</p>
+                </div>
+                <div class="col-md-4">
+                  <a class="btn-floating accent-1">
+                    <i class="fas fa-phone"></i>
+                  </a>
+                  <p>+ 92 2314 2616028</p>
+                  <p class="mb-md-0">Mon - Fri, 8:00-22:00</p>
+                </div>
+                <div class="col-md-4">
+                  <a class="btn-floating  accent-1">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <p>hamzaeportfolio@gmail.com</p>
+                  <p class="mb-0">hamzayousuf@gmail.com</p>
+                </div>
+              </div>
+    
+            </div>
+            <!-- Grid column -->
+    
+          </div>
+          <!-- Grid row -->
+    
+        </section>
+        <!--Section: Content-->
+    
+    
+      </div>
+    <!-- Main layout -->
+
+    <!-- Footer -->
+  <footer class="page-footer font-small secondary-color lighten-1">
+
+    <!-- Footer Links -->
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="./index.html">Home</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="./products.html">Products</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="./about.html">About Us</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="./contact.html">Contact</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="./login.html">Login</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+      <hr class="rgba-white-light" style="margin: 0 15%;">
+
+      <!-- Grid row-->
+      <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+        <!-- Grid column -->
+        <div class="col-md-8 col-12 mt-5">
+          <p style="line-height: 1.7rem" class="footertext">E-commerce (electronic commerce) is the activity of electronically
+            buying or selling of products on online services or over the Internet. Electronic commerce draws
+            on technologies such as mobile commerce, electronic funds transfer, supply chain management,
+            Internet marketing, online transaction processing, electronic data interchange (EDI),
+            inventory management systems, and automated data collection systems. E-commerce is in turn
+            driven by the technological
+            advances of the semiconductor industry, and is the largest sector of the electronics industry.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+      <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+      <!-- Grid row-->
+      <div class="row pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-12">
+
+          <div class="mb-5 flex-center">
+
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic">
+              <i class="fab fa-pinterest fa-lg white-text"> </i>
+            </a>
+
+          </div>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+    <hr class="rgba-white-light" style="margin: 0 15%;">
+
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright secondary-color lighten-1 text-center py-3">© 2020 Copyright:
+      <a href="https://sites.google.com/view/hamzaeportfolio"> hamzayousuf</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+    <!-- Footer -->
+
+    <!-- End your project here-->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
